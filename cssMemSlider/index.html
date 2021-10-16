@@ -5,33 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
-    <link href="https://fonts.googleapis.com/css?family=Lobster:regular" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
     <title>CSSMemeSlider by Tchigi</title>
   </head>
   <body>
     <div class="wrapper">
       <div class="content__container">
+        <input type="radio" name="r" id="r1" checked class="r" />
+        <input type="radio" name="r" id="r2" class="r" />
+        <input type="radio" name="r" id="r3" class="r" />
+        <input type="radio" name="r" id="r4" class="r" />
+        <input type="radio" name="r" id="r5" class="r" />
+
         <div class="slider__container">
-          <img src="./assets/img/slide1.jpg" alt="slide1" />
-          <img src="./assets/img/slide2.jpg" alt="slide2" />
-          <img src="./assets/img/slide3.jpg" alt="slide3" />
-          <img src="./assets/img/slide4.jpg" alt="slide4" />
-          <img src="./assets/img/slide5.jpg" alt="slide5" />
+          <div class="image s1"><img src="./assets/img/slide1.jpg" alt="slide" /></div>
+          <div class="image"><img src="./assets/img/slide2.jpg" alt="slide" /></div>
+          <div class="image"><img src="./assets/img/slide3.jpg" alt="slide" /></div>
+          <div class="image"><img src="./assets/img/slide4.jpg" alt="slide" /></div>
+          <div class="image"><img src="./assets/img/slide5.jpg" alt="slide" /></div>
         </div>
+
         <div class="control__container">
-          <div class="text__container"></div>
-          <div class="slider__carousel">
-            <div class="carousel__item"></div>
-            <div class="carousel__item"></div>
-            <div class="carousel__item"></div>
-            <div class="carousel__item"></div>
-            <div class="carousel__item"></div>
+          <div class="text__container">
+            <div class="text__slider">
+              <div class="text__item t1">I don't know why patrick's eyes were cut out. Don't ask...</div>
+              <div class="text__item">Banana?</div>
+              <div class="text__item">Everyone loves concatenation</div>
+              <div class="text__item">The main problem with floating point numbers</div>
+              <div class="text__item">The longer I study Javascript, the more I am convinced of this</div>
+            </div>
+          </div>
+
+          <div class="slider__carousel" id="active">
+            <label for="r1" class="carousel__item c1"></label>
+            <label for="r2" class="carousel__item c2"></label>
+            <label for="r3" class="carousel__item c3"></label>
+            <label for="r4" class="carousel__item c4"></label>
+            <label for="r5" class="carousel__item c5"></label>
           </div>
         </div>
       </div>
     </div>
-
-    <script src="./script.js"></script>
   </body>
 </html>
