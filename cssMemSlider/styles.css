@@ -18,7 +18,7 @@ body {
 }
 .slider__container {
   width: 500%;
-  height: 620px;
+  height: auto;
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -58,6 +58,7 @@ body {
   margin-right: 100%;
 }
 .control__container {
+  margin-top: -5px;
   padding-top: 50px;
   width: 100%;
   height: 6em;
@@ -79,8 +80,7 @@ body {
   height: 30px;
   background: #fff;
   cursor: pointer;
-  border: 15px solid;
-  border-color: rgba(137, 99, 186, 1);
+  border: 15px solid rgba(137, 99, 186, 1);
   border-radius: 50%;
 }
 .carousel__item:hover {
@@ -137,4 +137,63 @@ body {
 }
 #r5:checked ~ .control__container .slider__carousel .c5 {
   background: #4a3a7e;
+}
+
+@media (max-width: 450px) {
+  .wrapper {
+    width: 100%;
+  }
+  .content__container {
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .slider__container {
+    width: 500%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+  }
+  .text__container {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+  }
+
+  .text__item {
+    width: 100%;
+    font-size: 11px;
+  }
+  .control__container {
+    margin-top: -4px;
+    padding-top: 10px;
+    width: 100%;
+    height: 4em;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .slider__carousel {
+    width: 100%;
+    gap: 5px;
+    justify-content: center;
+  }
+  .carousel__item {
+    width: 10px;
+    height: 10px;
+    border: 5px solid rgba(137, 99, 186, 1);
+  }
+  #r2:checked ~ .control__container .text__container .text__slider .t1 {
+    margin-left: -195.5%;
+  }
+  #r3:checked ~ .control__container .text__container .text__slider .t1 {
+    margin-left: -310.5%;
+  }
+  #r4:checked ~ .control__container .text__container .text__slider .t1 {
+    margin-left: -461.5%;
+  }
+  #r5:checked ~ .control__container .text__container .text__slider .t1 {
+    margin-left: -642.5%;
+  }
 }
