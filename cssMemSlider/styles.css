@@ -144,7 +144,7 @@ body {
 }
 
 @media (max-width: 450px) {
-  .wrapper {
+  .slider {
     width: 10.666666666666666666666666666667rem;
   }
   .content__container {
